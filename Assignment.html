@@ -1,125 +1,167 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="description" content="">
-    <title>F1 Academy Website</title>
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hasif F1 Academy</title>
+    <link rel="stylesheet" href="Assignment.css">
+    <link rel="stylesheet" href="https://fontawesome.com/">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="Assignment.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link href='https://css.gg/arrow-top-right-o.css' rel='stylesheet'>
+    <link href='https://css.gg/phone.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/74bc4cc0bb.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
-<div class="nav">
-    <a class="logo" href="#">
-        <img class="logo-img" src="Academy Logo.png">
-    </a>
-
-    <div class="navbar-toggler" type="button" id="bar">
-      <span class="toggler-icon"></span>
-      <span class="toggler-icon"></span>
-      <span class="toggler-icon"></span>
-    </div>
-
-    <div class="menu-bar">
-      <ul class="menu-items">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Training Information</a></li>
-        <li><a href="#">History Of F1</a></li>
-      </ul>
-    </div>
-
-    <div class="navbar-social">
-        <span>Our Socials</span>
-        <ul>
-          <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-          <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-          <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-          <li><a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+<div id="header">
+    <div class="containerr">
+      <nav>
+        <img src="Academy Logo.png" class="logo" id="logo">
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#">History Of F1</a></li>
+          <li><a href="#">Training Information</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+          <i class="fas fa-times" onclick="closemenu()"></i>
         </ul>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+        <h1>Hasif <span>F1</span> Academy</h1>
+        <p><span class="cars">&#127950;</span> Achieve the impossible with the VERY FIRST Singapore F1 Academy <span class="cars">&#127950;</span></p>
+      </div>
     </div>
-
-</div>
-
-<div class="back" id="home">
-  <div class="overlay"></div>
-</div>
-
-<div class="hero-text">
-  <h3>HASIF <span class="f1">F1</span> ACADEMY</h3>
-  <h6>🏎 Achieve the impossible with the VERY FIRST Singapore F1 Academy 🏎 <br>
-WE ARE looking for the next F1 STAR in Singapore!</h6>
-  <ul class="header-btn">
+    <a href="#" class="sign-up-btn" target="_blank">Sign Up Now!</a>
+    <br>
     <span class="flag">&#127937;</span>
-    <li><a class="main-btn btn-one" href="#">Sign Up Now!</a></li>
-    <li><a class="main-btn btn-two" href="#">Contact Us</a></li>
-  </ul>
 </div>
-
-<section id="wrapper">
-  <section id="vmv" class="vmv">
-    <h3>About Us</h3>
-    <h6>We are all about helping you to achieve your goals in Motorsport in Singapore!</h6>
-
-    <div class="vmv-content">
-      <div class="box">
-        <div class="box-one">
-          <div class="vision">
-            <div class="vision-icon">
-              <i class="fa fa-low-vision" aria-hidden="true"></i>
-            </div>
-            <div class="vision-content">
-              <h4 class="vision-title">Our Vision</h4>
-              <p class="text">To provide Singaporeans with a dream in racing in the highest open-wheel-single-seater a chance in landing a seat in the sport of F1!</p>
-            </div>
-          </div>
-          <div class="vision">
-            <div class="vision-icon">
-              <i class="fa fa-low-vision" aria-hidden="true"></i>
-            </div>
-            <div class="vision-content">
-              <h4 class="vision-title">Our Vision</h4>
-              <p class="text">To provide Singaporeans with a dream in racing in the highest open-wheel-single-seater a chance in landing a seat in the sport of F1!</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="box-one">
-          <div class="vision">
-            <div class="vision-icon">
-              <i class="fa fa-low-vision" aria-hidden="true"></i>
-            </div>
-            <div class="vision-content">
-              <h4 class="vision-title">Our Vision</h4>
-              <p class="text">To provide Singaporeans with a dream in racing in the highest open-wheel-single-seater a chance in landing a seat in the sport of F1!</p>
-            </div>
-          </div>
-          <div class="vision">
-            <div class="vision-icon">
-              <i class="fa fa-low-vision" aria-hidden="true"></i>
-            </div>
-            <div class="vision-content">
-              <h4 class="vision-title">Our Vision</h4>
-              <p class="text">To provide Singaporeans with a dream in racing in the highest open-wheel-single-seater a chance in landing a seat in the sport of F1!</p>
-            </div>
-          </div>
-        </div>
-
+<!--- About ---->
+<div id="about">
+  <div class="container">
+    <div class="row">
+      <div class="about-col-1">
+        <img src="Hasif Picture.jpg">
       </div>
-
-      <div class="vmz-img">
-        <img src="vision-mision-value-picture.png">
+      <div class="about-col-2">
+        <h1 class="sub-title">About Me</h1>
+        <br>
+        <p>Hi, i am Hasif, the founder of this first F1 Academy in Singapore. <br> Since i was young, my passion for motorsport has been there in my blood. I have attended the annual Singapore Grand Prix and met with former F1 drivers that i have reached out to make my dream come true, which is to make my very own F1 Academy.</p>
+        <br>
+        <p>My main goal here is to recruit and train the next F1 Star from Singapore with fundings provided whenever possible. So if you have what it takes to achieve a seat at the pinnacle of F1, Hasif F1 Academy is the place for you!</p>
+        <br>
+        <div class="tab-titles">
+          <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+          <p class="tab-links" onclick="opentab('experience')">Experience</p>
+          <p class="tab-links" onclick="opentab('education')">Education</p>
+        </div>
+        <div class="tab-contents active-tab" id="skills">
+          <ul>
+            <li><span>Approachable</span><br>I am able to talk well in person and in groups</li>
+            <li><span>Encouraging</span><br>I have a niche in motivating others</li>
+            <li><span>Attentive</span><br>I pay close attention to details especially in Motorsport</li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="experience">
+          <ul>
+            <li><span>I have a profound Knowledge In Motorsport</span><br>Since childhood, i was always into motor racing</li>
+            <li><span>I have driven Go-Karts and Single-Seater cars</span><br>Was given the opportunity at the 2019 Singapore Grand Prix</li>
+            <li><span>Experience in Business Managing</span><br>Passed a 6 month course on managing a business</li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="education">
+          <ul>
+            <li><span>Diploma In Infocomm & Security NYP (2022-2025)</span><br>Current</li>
+            <li><span>Higher Nitec In Cyber & Network Security ITE CW (2020-2022)</span><br>Graduated</li>
+            <li><span>Ahmad Ibrahim Secondary School</span><br>Graduated</li>
+          </ul>
+        </div>
+        <a href="About-Us.html" class="btn btn2" target="_blank">Find Out More!</a>
       </div>
     </div>
+  </div>
+</div>
 
-  </section>
-</section>
+<!---------contact-------->
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title">Contact Us</h1>
+        <p><i class="gg-arrow-top-right-o"></i>mhasif175@gmail.com</p>
+        <p><i class="gg-phone"></i>83436485</p>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/hasif.captain.1/" target="_blank"><i class="fa fa-facebook"></i></a>
+          <a href="https://www.instagram.com/__.m.__.hasif.__/" target="_blank"><i class="fa fa-instagram"></i></a>
+          <a href="mailto:mhasif175@gmail.com" target="_blank"><i class="fa fa-google"></i></a>
+          <a href="https://www.linkedin.com/in/muhammad-hasif-bin-muhammad-i-a6b170201/" target="_blank"><i class="fa fa-linkedin"></i></a>
+        </div>
+        <a href="https://www.youtube.com/channel/UC3mn94yeDdwyWEcxMk1syoA" class="btn btn2" target="_blank">My Youtube Channel</a>
+    </div>
+    <div class="contact-right">
+      <form name="submit-to-google-sheet">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+        <button type="submit" class="btn btn2">Submit</button>
+        <span id="msg"></span>
+        <br>
+        <br>
+        <p>Copyright © Hasif. Made by Muhammad Hasif</p>
+        <p>All Rights Reserved</p>
+      </form>
+      </div>
+    </div>
+  </div>
+</div>
 
 
-<script src="Assignment.js" charset="utf-8"></script>
+<!---- Javascript --->
+
+<script>
+  var tablinks = document.getElementsByClassName("tab-links");
+  var tabcontents = document.getElementsByClassName("tab-contents");
+  function opentab(tabname){
+    for(tablink of tablinks){
+      tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+      tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+  }
+</script>
+
+<script>
+  var sidemenu = document.getElementById("sidemenu");
+  function openmenu(){
+    sidemenu.style.right = "0";
+  }
+  function closemenu(){
+    sidemenu.style.right = "-200px";
+  }
+</script>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwRRL1vLLD3C6OQVC6i2Bmw1bdJ3IGRg0go1OsWohH4Kn0nYCyVOzmeS9vz8rBY6yk8/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfully"
+        setTimeout(function(){
+          msg.innerHTML = ""
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
 </body>
-
 </html>
