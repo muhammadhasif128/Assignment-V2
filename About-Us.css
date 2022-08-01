@@ -483,4 +483,9 @@ nav .fas{
     white-space: nowrap;
     font-size: 20px;
   }
+  .location h1{
+    padding-right: 60px;
+    justify-content: center;
+    text-align: center;
+  }
 }
