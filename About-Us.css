@@ -108,21 +108,6 @@ nav ul li a:hover::after{
   color: red;
 }
 
-.fa-solid{
-  font-size: 50px;
-  display: flex;
-  margin: auto;
-  justify-content: center;
-  padding-left: 550px;
-  padding-bottom: 10px;
-  transition: transform 0.5s;
-}
-
-.fa-solid:hover{
-  color: #ff004f;
-  transform: translateY(-5px);
-}
-
 #second{
   margin: auto;
   display: flex;
@@ -384,7 +369,7 @@ h2{
   color: white;
   text-shadow: 2px 2px 4px #000000;
   margin-bottom: 60px;
-  margin-top: 30px;
+  margin-top: 90px;
   transition: transform 0.5s;
   font-size: 45px;
   font-style: oblique;
@@ -414,10 +399,17 @@ iframe{
 }
 
 .fa-solid{
-  justify-content: space-around;
   font-size: 30px;
-  padding-left: 900px;
+  display: flex;
+  margin: auto;
+  padding-bottom: 10px;
+  transition: transform 0.5s;
   color: white;
+}
+
+.fa-solid:hover{
+  color: #ff004f;
+  transform: translateY(-5px);
 }
 
 

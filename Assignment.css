@@ -359,15 +359,17 @@ form .btn2{
 }
 
 .fa-solid{
-  position: absolute;
   font-size: 30px;
-  padding-left: 700px;
-  color: white;
+  display: flex;
+  margin: auto;
+  padding-top: 10px;
+  padding-left: 150px;
   transition: transform 0.5s;
+  color: white;
 }
 
 .fa-solid:hover{
-  color: red;
+  color: #ff004f;
   transform: translateY(-5px);
 }
 
