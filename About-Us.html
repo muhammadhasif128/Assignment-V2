@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>About-Us</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="About-Us.css">
+    <script src="https://kit.fontawesome.com/74bc4cc0bb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="header">
+      <div class="containerr">
+        <nav>
+          <img src="Academy Logo.png" class="logo" id="logo">
+          <ul id="sidemenu">
+            <li><a href="Assignment.html" target="_blank">Home</a></li>
+            <li><a href="About-Us.html">About Us</a></li>
+            <li><a href="#">History Of F1</a></li>
+            <li><a href="#">Training Information</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <i class="fa-solid fa-sort-down"></i>
+        <section class="vision-mission-values">
+          <h1>Why Hasif <span>F1</span> Academy?</h1>
+          <a href="#vision-mission-values" class="sign-up-btn">Click Here!</a>
+        </section>
+        <i id="second" class="fa-solid fa-flag-checkered"></i>
+    </div>
+  </div>
+
+  <!---- Vision-Mission-Values --->
+  <section id="vision-mission-values">
+    <h3>Our Vision Mission and Values</h3>
+    <section class="header-things">
+    <div class="row">
+      <div class="header-things-col">
+        <h2>Our Vision</h2>
+        <hr>
+        <p>To provide Singaporeans with a dream in racing in the highest open-wheel-single-seater a chance in landing a seat in the sport of F1!
+        <p>All racing license will be provided from all the license class, step by step, to get to your final destination, F1.</p>
+        <p>We cater to your goals and needs here at <br> Hasif F1 Academy!</p>
+      </div>
+      <div class="header-things-col">
+        <h2>Our Mission</h2>
+        <hr>
+        <p>At Hasif F1 Academy, we have connections with Former F1 World Champions such as <br> <a href="https://en.wikipedia.org/wiki/Nico_Rosberg" target="_blank">Nico Rosberg</a>, <a href="https://en.wikipedia.org/wiki/Jenson_Button" target="_blank">Jenson Button</a>, <a href="https://en.wikipedia.org/wiki/Fernando_Alonso" target="_blank">Fernando Alonso</a> who have agreed to coach those that sign up with us!</p>
+        <p> We have amazing facilities at KF1 Karting Circuit, to build your foundation well as well as friendly trainers that will make the environment such a friendly one to grow as a potential racing driver!</p>
+      </div>
+      <div class="header-things-col">
+        <h2>Our Values</h2>
+        <hr>
+        <p>We are dedicated to providing equal chances to everyone that signed up and treating every customer with the outmost respect.
+        <p>We are always pushing the limits here, and we NEVER GIVE UP!</p>
+        <p>Lastly, we strive to achieve the Impossible!</p>
+      </div>
+    </div>
+  </section>
+
+  <!---- Facilities --->
+  <section class="F1-Facility">
+    <h1>Our <span>Racing</span> Academy Facility</h1>
+    <p>@KF1 Karting Circuit</p>
+    <div class="row">
+      <div class="F1-Facility-col">
+        <img src="KF1-Pic.png" alt="kf1-photo">
+        <div class="layer">
+          <p>Our Go-Karts!</p>
+        </div>
+      </div>
+      <div class="F1-Facility-col">
+        <img src="http://www.burnpavement.com/upload/image/1415782111_full-track.jpg" alt="kf1-photo">
+        <div class="layer">
+          <p>Our Track Layout!</p>
+        </div>
+      </div>
+      <div class="F1-Facility-col">
+        <img class="third-photo" src="https://static.mothership.sg/1/2021/08/Screenshot-2021-08-17-at-11.07.02-AM.png" alt="kf1-photo">
+        <div class="layer">
+          <p>Night Events!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!---- Where are we located --->
+  <body id="location">
+    <div class="location">
+      <h1>We are Here!<i class="fa-solid fa-location-dot"></i></h1>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.7337592006406!2d103.95720581467721!3d1.3359737619922052!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da3d0076e60577%3A0xfa033b7b472539c0!2sKF1%40Expo!5e0!3m2!1sen!2ssg!4v1659346419346!5m2!1sen!2ssg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <br>
+      <p>Copyright © Hasif. Made by Muhammad Hasif <br> All Rights Reserved</p>
+    </div>
+    <a href="#header"><i class="fa-solid fa-circle-arrow-up"></i></a>
+  </body>
+
+<!---- Javascript --->
+<script>
+  var sidemenu = document.getElementById("sidemenu");
+  function openmenu(){
+    sidemenu.style.right = "0";
+  }
+  function closemenu(){
+    sidemenu.style.right = "-200px";
+  }
+</script>
+</body>
+</html>
