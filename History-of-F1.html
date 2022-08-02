@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>History-of-F1</title>
+    <link rel="stylesheet" href="History-of-F1.css">
+    <script src="https://kit.fontawesome.com/74bc4cc0bb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="lightbox.css">
+</head>
+
+<body>
+  <div id="header">
+       <div class="containerr">
+         <nav>
+           <img src="Academy Logo.png" class="logo" id="logo">
+           <ul id="sidemenu">
+             <li><a href="Assignment.html" target="_blank">Home</a></li>
+             <li><a href="About-Us.html" target="_blank">About Us</a></li>
+             <li><a href="#">History Of F1</a></li>
+             <li><a href="Training-Information.html" target="_blank">Training Information</a></li>
+             <i class="fas fa-times" onclick="closemenu()"></i>
+           </ul>
+           <i class="fas fa-bars" onclick="openmenu()"></i>
+         </nav>
+         <section class="vision-mission-values">
+           <h1>Curious to know a little more about <br> <span> F1's</span> History?</h1>
+           <a href="#pics" class="sign-up-btn">Click Here!</a>
+         </section>
+     </div>
+   </div>
+
+<!---Pics --->
+<section id="pics">
+  <div class="container">
+    <h1 class="title">The Top 3 Categories In F1</h1>
+    <div class="gallery">
+      <h1 class="subtitle">F1</h1>
+      <a href="https://www.racefans.net/wp-content/uploads/2022/03/racefansdotnet-21-03-20-13-03-53-11.jpg" data-lightbox="models" data-title="Class of F1 2022 Drivers">
+        <img src="https://www.racefans.net/wp-content/uploads/2022/03/racefansdotnet-21-03-20-13-03-53-11.jpg">
+      </a>
+      <a href="https://e1.365dm.com/22/02/2048x1152/skysports-red-bull-2022-car_5668079.jpg" data-lightbox="models" data-title="Red Bull Racing 2022 F1 Car">
+        <img src="https://e1.365dm.com/22/02/2048x1152/skysports-red-bull-2022-car_5668079.jpg">
+      </a>
+      <br>
+      <h1 class="subtitle">F2</h1>
+      <a href="https://media.gettyimages.com/photos/the-f2-class-of-2022-drivers-pose-for-a-photo-during-previews-ahead-picture-id1385941630?s=2048x2048" data-lightbox="models" data-title="Class of F2 2022 Drivers">
+        <img src="https://media.gettyimages.com/photos/the-f2-class-of-2022-drivers-pose-for-a-photo-during-previews-ahead-picture-id1385941630?s=2048x2048">
+      </a>
+      <a href="https://images.cdn.circlesix.co/image/2/1200/700/5/uploads/posts/2019/05/595a937d35b9e4af9de594f6a18c413a.png" data-lightbox="models" data-title="A sample F2 2022 Car">
+        <img src="https://images.cdn.circlesix.co/image/2/1200/700/5/uploads/posts/2019/05/595a937d35b9e4af9de594f6a18c413a.png">
+      </a>
+      <br>
+      <h1 class="subtitle">F3</h1>
+      <a href="https://pbs.twimg.com/media/FODN6daXIAEgY9D?format=jpg&name=4096x4096" data-lightbox="models" data-title="Class of F3 2022 Drivers">
+        <img src="https://pbs.twimg.com/media/FODN6daXIAEgY9D?format=jpg&name=4096x4096">
+      </a>
+      <a href="https://res.cloudinary.com/prod-f2f3/image/upload/v1646674022/f3/global/cars/2022/01Trident_022F3_1500-00T.png" data-lightbox="models" data-title="Red Bull Racing 2022 F3 Car">
+        <img src="https://res.cloudinary.com/prod-f2f3/image/upload/v1646674022/f3/global/cars/2022/01Trident_022F3_1500-00T.png">
+      </a>
+    </div>
+  </div>
+</section>
+<!----Javascript From Github https://github.com/lokesh/lightbox2---->
+<script src="lightbox-plus-jquery.js"></script>
+<!----Javascript for responsive--->
+<script>
+  var sidemenu = document.getElementById("sidemenu");
+  function openmenu(){
+    sidemenu.style.right = "0";
+  }
+  function closemenu(){
+    sidemenu.style.right = "-200px";
+  }
+</script>
+</body>
+</html>
