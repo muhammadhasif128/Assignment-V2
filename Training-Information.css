@@ -1,0 +1,266 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  transition: 0.5s ease;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(https://images.unsplash.com/photo-1563556469065-2cb69c7a1900?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1548&q=80);
+  background-size: cover;
+  background-position: center;
+}
+
+
+/*nav*/
+
+.containerr{
+  padding: 10px 10%;
+}
+
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+body img{
+  padding-top: 45px;
+  padding-bottom: 45px;
+  float: left;
+  height: auto;
+  border-radius: 50%;
+  cursor: pointer;
+  width: 140px;
+  margin-left: 30px;
+}
+
+nav ul li{
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+nav ul li a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  position: relative;
+}
+
+nav ul li a:hover{
+  word-spacing: 10px;
+  transition: 3s ease;
+}
+
+nav ul li a::after{
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #ff004f;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+  width: 100%;
+}
+
+/*table*/
+
+table{
+  border: 8px solid black;
+  border-collapse: collapse;
+  padding: 0;
+  width: 100%;
+}
+
+table:hover{
+  border-color: gold;
+}
+
+table caption{
+  color: white;
+  font-size: 30px;
+  margin: auto;
+  text-align: center;
+  text-shadow: 0 0 15px #ff0000, 0 0 5px #0000ff;
+  font-style: oblique;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+table caption:hover{
+  text-shadow: 2px 2px 15px #FF0000;
+  font-weight: bold;
+  transition: 1s ease;
+}
+
+table tr{
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: .35em;
+}
+
+table th,
+table td{
+  padding: .625em;
+  text-align: center;
+  border-radius: 5px;
+}
+
+table th{
+  font-size: .85em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+.paragraph{
+  justify-content: center;
+  color: white;
+  white-space: nowrap;
+  text-shadow: 0 0 3px #FF0000;
+  word-spacing: 2px;
+  margin-top: 30px;
+}
+
+.row{
+  margin-left: 400px;
+}
+
+.row h1{
+  color: white;
+  font-size: 30px;
+  margin: auto;
+  text-align: center;
+  text-shadow: 0 0 15px #ff0000, 0 0 5px #0000ff;
+  font-style: oblique;
+  position: relative;
+  padding-bottom: 20px;
+  padding-right: 370px;
+  padding-top: 15px;
+}
+
+.row h1:hover{
+  text-shadow: 2px 2px 15px #FF0000;
+  font-weight: bold;
+  transition: 1s ease;
+}
+
+.column{
+  float: left;
+  width: 50%;
+  display: flex;
+  padding-left: 10px;
+}
+
+hr{
+  margin-right: 10px;
+}
+
+/*responsive*/
+nav .fas{
+  display: none;
+}
+@media only screen and (max-width: 700px){
+  #header{
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(https://images.unsplash.com/photo-1563556469065-2cb69c7a1900?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1548&q=80);
+  }
+  nav .fas{
+    display: block;
+    font-size: 25px;
+  }
+  nav ul{
+    background: red;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 30vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: right 0.5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 0;
+  }
+  nav ul li{
+    text-align: center;
+    padding-bottom: 0px;
+  }
+  nav ul .fas{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+  }
+@media screen and (max-width: 600px){
+  table{
+    border: 0;
+  }
+
+  table caption{
+    font-size: 1.3em;
+  }
+
+  table thead{
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+
+  table tr{
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: .625em;
+  }
+
+  table td{
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: .8em;
+    text-align: right;
+  }
+
+  table td::before{
+    /*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  table td:last-child{
+    border-bottom: 0;
+  }
+
+  .row{
+    position: absolute;
+    justify-content: center;
+    margin: auto;
+    font-size: 13px;
+  }
+
+  .row h1{
+    padding-left: 180px;
+  }
+}
