@@ -11,9 +11,9 @@ html{
 }
 
 body{
-  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(https://images.unsplash.com/photo-1563556469065-2cb69c7a1900?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1548&q=80);
-  background-size: cover;
-  background-position: center;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(https://images.unsplash.com/photo-1565900112266-e38c6b2e822c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1548&q=80);
+  width: 100%;
+  height: 100vh;
 }
 
 
@@ -38,7 +38,7 @@ body img{
   border-radius: 50%;
   cursor: pointer;
   width: 140px;
-  margin-left: 30px;
+  margin-left: 10px;
 }
 
 nav ul li{
@@ -79,19 +79,22 @@ nav ul li a:hover::after{
 /*table*/
 
 table{
-  border: 8px solid black;
+  border: 5px solid blue;
   border-collapse: collapse;
   padding: 0;
   width: 100%;
+  color: black;
+  font-weight: bold;
 }
 
 table:hover{
-  border-color: gold;
+  border: 2px solid red;
 }
 
 table caption{
   color: white;
   font-size: 30px;
+  font-weight: bold;
   margin: auto;
   text-align: center;
   text-shadow: 0 0 15px #ff0000, 0 0 5px #0000ff;
@@ -136,6 +139,7 @@ table th{
 
 .row{
   margin-left: 400px;
+  margin-top: 30px;
 }
 
 .row h1{
@@ -168,13 +172,152 @@ hr{
   margin-right: 10px;
 }
 
+
+/*motivational words by F1 Drivers*/
+
+.testimonials{
+  width: 80%;
+  margin: auto;
+  padding-top: 100px;
+  text-align: center;
+}
+
+.testimonials h1{
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  text-shadow: 0 0 15px #ff0000, 0 0 5px #0000ff;
+  font-style: oblique;
+  padding-bottom: 20px;
+}
+
+.testimonials h1:hover{
+  text-shadow: 2px 2px 15px #FF0000;
+  font-weight: bold;
+  transition: 1s ease;
+}
+
+.dreams{
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  text-shadow: 0 0 15px #ff0000, 0 0 5px #0000ff;
+  font-style: oblique;
+  padding-bottom: 20px;
+}
+
+.testimonial-col{
+  flex-basis: 44%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  text-align: left;
+  background: #fff3f3;
+  padding: 25px;
+  cursor: pointer;
+  display: flex;
+}
+
+.testimonial-col:hover{
+  border: 1px ridge #E34234;
+  padding: 10px;
+  box-shadow: 5px 5px 5px 5px black;
+  transition: 0.5s ease;
+}
+
+.testimonial-col p{
+  padding: 0;
+}
+
+.p-Verstappen{
+  text-shadow: 2px 2px 20px blue;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+  font-style: oblique;
+}
+
+.p-Vettel{
+  text-shadow: 2px 2px 20px green;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+  font-style: oblique;
+}
+
+.testimonial-col h3{
+  margin-top: 15px;
+  text-align: left;
+  font-style: oblique;
+}
+
+.Verstappen:hover{
+  color: blue;
+}
+
+.Vettel:hover{
+  color: green;
+}
+
+.testimonial-col i{
+  color: #f44336;
+  font-style: oblique;
+  font-size: 15px;
+}
+
+
+@media(max-width: 700px){
+  .testimonial-col img{
+    margin-left: 0px;
+    margin-right: 15px;
+  }
+  .testimonials p{
+    padding-top: 10px;
+  }
+  .subheader{
+    margin-top: 20px;
+  }
+}
+
+.first{
+  justify-content: center;
+  color: white;
+  text-shadow: 0 0 3px #FF0000;
+  word-spacing: normal;
+  padding-left: 550px;
+}
+
+.second{
+  justify-content: center;
+  color: white;
+  text-shadow: 0 0 3px #FF0000;
+  word-spacing: normal;
+  padding-left: 650px;
+}
+
+.fa-solid{
+  font-size: 30px;
+  display: flex;
+  padding-top: 10px;
+  transition: transform 0.5s;
+  color: white;
+  padding-left: 700px;
+
+}
+
+.fa-solid:hover{
+  color: #ff004f;
+  transform: translateY(-5px);
+}
+
+
 /*responsive*/
 nav .fas{
   display: none;
 }
 @media only screen and (max-width: 700px){
   #header{
-    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(https://images.unsplash.com/photo-1563556469065-2cb69c7a1900?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1548&q=80);
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(https://images.unsplash.com/photo-1565900112266-e38c6b2e822c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1548&q=80);
+
   }
   nav .fas{
     display: block;
@@ -186,8 +329,8 @@ nav .fas{
     top: 0;
     right: -200px;
     width: 200px;
-    height: 30vh;
-    padding-top: 50px;
+    height: 40vh;
+    padding-top: 30px;
     z-index: 2;
     transition: right 0.5s;
   }
@@ -211,7 +354,8 @@ nav .fas{
   }
 
   table caption{
-    font-size: 1.3em;
+    font-size: 30px;
+    padding-top: 50px;
   }
 
   table thead{

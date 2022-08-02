@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Sign-Up-Response</title>
+    <link rel="stylesheet" href="SignUpFormProcessor.css">
+  </head>
+  <body>
+    <script type="text/javascript">
+      var formData = location.search;
+      formData = formData.substring(1, formData.length);
+      while (formData.indexOf("+") != -1) {
+        formData = formData.replace("+", " ");
+      }
+      formData = unescape(formData);
+      var formArray = formData.split("&");
+      var para=new Array();
+    </script>
+
+      <h1>Thank you for signing up!</h1>
+      <br>
+      <br>
+      <p>Hey <span id="name"></span>, you have successfully signed up.</p>
+      <br>
+      <br>
+      <p>For further details on the training we will contact you at <span id="number"></span> or <span id="email"></span></p>
+      <br>
+      <br>
+      <p>Hope to see you soon!</p>
+      <br>
+
+    <script type="text/javascript">
+      for (var i=0; i < formArray.length; ++i) {
+      	para=formArray[i].split("=");
+      	switch (para[0]) {
+      		case "name":
+                document.getElementById("name").innerHTML=para[1];
+                break;
+      		case "number":
+      					document.getElementById("number").innerHTML=para[1];
+      					break;
+          case "email":
+                document.getElementById("email").innerHTML=para[1];
+                break;
+          }
+      }
+    </script>
+  </body>
+</html>
