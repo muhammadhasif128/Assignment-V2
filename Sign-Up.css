@@ -200,8 +200,31 @@ body{
   background: #ffd658;
 }
 
+.fa-solid{
+  font-size: 30px;
+  display: flex;
+  margin: auto;
+  padding-bottom: 10px;
+  transition: transform 0.5s;
+  color: white;
+  padding-left: 700px;
+  padding-top: 10px;
+}
+
+.fa-solid:hover{
+  color: #ff004f;
+  transform: translateY(-5px);
+}
+
+.copyright{
+  text-align: center;
+  color: white;
+  white-space: nowrap;
+  text-shadow: 0 0 3px #FF0000;
+}
+
 /* responsive form */
-@media (max-width: 420px){
+@media (max-width: 500px){
   .wrapper .form .input_field{
     flex-direction: column;
     align-items: flex-start;
@@ -212,4 +235,11 @@ body{
   .wrapper .form .input_field.terms{
     flex-direction: row;
   }
+  img{
+    display: none;
+    visibility: hidden;
+  }
+  .fa-solid{
+    display: none;
+    visibility: hidden;
 }
