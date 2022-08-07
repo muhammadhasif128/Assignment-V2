@@ -203,7 +203,7 @@ body{
 .fa-solid{
   font-size: 30px;
   display: flex;
-  margin: auto;
+  margin: 0 auto;
   padding-bottom: 10px;
   transition: transform 0.5s;
   color: white;
@@ -239,7 +239,11 @@ body{
     display: none;
     visibility: hidden;
   }
+
   .fa-solid{
-    display: none;
-    visibility: hidden;
-}
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  }

@@ -453,13 +453,9 @@ nav .fas{
   }
 
   .row{
-    position: absolute;
-    justify-content: center;
-    margin: auto;
-    font-size: 13px;
+    margin:0;
   }
 
-  .row h1{
-    padding-left: 180px;
-  }
+
+
 }
